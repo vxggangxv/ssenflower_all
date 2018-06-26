@@ -1,0 +1,30 @@
+#Footer {padding-bottom:40px; background-color:#323232;}
+#Footer .wrap:after {content:''; display:block; clear:both;}
+#Footer .footermn-wrap {background:none; height:auto;}
+#Footer .footermn-wrap .wrap {padding:15px 0; border-bottom:1px solid }
+#Footer .footermn-wrap .wrap .policy {float:left; padding-top:5px; color:#a3a3a3;}
+#Footer .footermn-wrap .wrap .policy a {color:#a3a3a3;}
+#Footer .footermn-wrap .wrap .policy a:hover {color:#fff;}
+#Footer .footermn-wrap .wrap .policy a.privacy {color:#fff; font-weight:bold;}
+#Footer .footermn-wrap .wrap #family_site {float:right; position:relative;}
+#Footer .footermn-wrap .wrap #family_site .fam_btn_m {height:20px; padding:3px 3px 0px 3px; border:1px solid #999;}
+#Footer .footermn-wrap .wrap #family_site .fam_btn_m a {color:#a3a3a3;}
+#Footer .footermn-wrap .wrap #family_site .fam_btn {width:108px; height:20px;}
+#Footer .footermn-wrap .wrap #family_site #family_list {display:none; position:absolute; bottom:25px; width:108px; padding-left:5px; border:1px solid #999; border-bottom:none; background:#323232;}
+#Footer .footermn-wrap .wrap #family_site #family_list li {margin-right:0;}
+#Footer .footermn-wrap .wrap #family_site #family_list li a {color:#a3a3a3;}
+#Footer .footermn-wrap .wrap #family_site #family_list li a:hover {color:#fff;}
+#Footer .footerinfo-wrap {float:none; margin-top:0;}
+#Footer .footerinfo-wrap .wrap {padding-top:25px; border-top:1px solid #505050; position:relative;}
+#Footer .footerinfo-wrap .wrap .logo {margin-top:0;}
+#Footer .footerinfo-wrap .wrap .txt {margin-top:0;}
+#Footer .footerinfo-wrap .wrap .txt p {margin-bottom:10px; font-size:13px;}
+#Footer .footerinfo-wrap .wrap .txt p.copy {color:#a3a3a3; letter-spacing:-0.3px;}
+#Footer .footerinfo-wrap .wrap .txt p strong {color:#cdcdcd; font-size:15px;}
+#Footer .footerinfo-wrap .wrap .txt p a {margin-left:5px; vertical-align:middle;}
+#Footer .footerinfo-wrap .wrap .txt p span {color:#a3a3a3; vertical-align:middle;}
+#Footer .footerinfo-wrap .wrap .customer {position:absolute; right:0; top:25px;}
+#Footer .footerinfo-wrap .wrap li {width:190px; height:84px; margin-bottom:10px; padding:12px 0 0 84px;}
+#Footer .footerinfo-wrap .wrap .customer li.f_mail {background:url('http://img.ssenflower.co.kr/f_ico_mail.gif') no-repeat 20px 50% #414141;}
+#Footer .footerinfo-wrap .wrap .customer li p {color:#a4a4a4; font-size:14px;}
+#Footer .footerinfo-wrap .wrap .customer li.f_mail strong {color:#a4a4a4; font-size:24px; line-height:24px; letter-spacing:-2px;}

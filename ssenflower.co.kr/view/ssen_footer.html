@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<title>센플라워</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+<link rel="shortcut icon" type="image/x-icon" href="http://img.ssenflower.co.kr/favicon.ico" />
+<link rel="stylesheet" href="http://static.ssenflower.co.kr/css/reset.css" type="text/css"/>
+<!-- <link rel="stylesheet" href="http://static.ssenflower.co.kr/css/layout.css?v=1491789089" type="text/css"/> -->
+<link rel="stylesheet" href="http://static.go.co.kr/css/jquery-ui.css" />
+<!-- Android icon -->
+<link rel="shortcut icon" href="http://img.ssenflower.co.kr/icon_128x128.png" />
+<!-- iPhone icon -->
+<link rel="apple-touch-icon" sizes="57x57" href="http://img.ssenflower.co.kr/icon_57x57.png" />
+<!-- iPad icon -->
+<link rel="apple-touch-icon" sizes="72x72" href="http://img.ssenflower.co.kr/icon_72x72.png" />
+<!-- iPhone icon(Retina) -->
+<link rel="apple-touch-icon" sizes="114x114" href="http://img.ssenflower.co.kr/icon_114x114.png" />
+<!-- iPad icon(Retina) -->
+<link rel="apple-touch-icon" sizes="144x144" href="http://img.ssenflower.co.kr/icon_144x144.png" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<link rel="stylesheet" href="http://static.ssenflower.co.kr/css/footer.css" />
+</head>
+<body style="padding-top:500px;">
+	<script type="text/javascript">
+		function click_family(){
+			var hh = $("#family_list").attr("class");
+			if(hh == "f_on"){
+				$("#family_list").css({"display":"none"});
+				$("#family_list").removeClass("f_on");
+			}else{
+				$("#family_list").css({"display":"block"});
+				$("#family_list").addClass("f_on");
+			}
+		}
+	</script>
+	<div id="Footer">
+		<div class="footermn-wrap">
+			<div class="wrap">
+				<div class="policy">
+					<a onclick="util.pop('/home/policy/agree.php', 'policy', 738, 640);">이용약관</a>
+					&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+					<a onclick="util.pop('/home/policy/privacy.php', 'policy', 738, 640);" class="privacy">개인정보처리방침</a>
+					&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+					<a href="http://www.ebiznetworks.co.kr/home/company" target="_blank">회사소개</a>
+					&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+					<a href="/home/customer/guide.php">이용안내</a>
+					&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+					<a href="https://www.inicis.com/payment_view" target="_blank">영수증출력하기</a>
+					&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+					<a href="/home/board/list.php?b=qna">1:1문의하기</a>
+				</div>
+				<div id="family_site">
+					<div class="fam_btn_m">
+						<a href="javascript:click_family();" style="">family site&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▲</a>
+					</div>
+					<ul id="family_list">
+						<li style='margin-top:10px;'>
+							<div class="fam_btn" style='font-weight:bold; color: #a3a3a3;'>[ 부동산 ]</div>
+						</li>
+						<li>
+							<div class="fam_btn"><a href="http://www.monotower.com/" target="_blank">모노타워</a></div>
+						</li>
+						<li>
+							<div class="fam_btn"><a href="http://www.monopalace.com" target="_blank">모노팰리스</a></div>
+						</li>
+						<li>
+							<div class="fam_btn"><a href="http://partners.monopalace.com" target="_blank">모노팰리스 파트너스</a></div>
+						</li>
+						<li>
+							<div class="fam_btn"><a href="http://www.enasset.co.kr" target="_blank">이엔자산개발</a></div>
+						</li>
+						<li>
+							<div class="fam_btn"><a href="http://www.monocityvil.com" target="_blank">모노씨티빌 등촌</a></div>
+						</li>
+						<li>
+							<div class="fam_btn"><a href="http://www.ditower.co.kr" target="_blank">DI타워</a></div>
+						</li>
+						<li>
+							<div class="fam_btn"><a href="http://www.onbiz.co.kr/" target="_blank">온비즈 오피스</a></div>
+						</li>
+						<li style='margin-top:10px;'><div class="fam_btn" style='font-weight:bold; color: #a3a3a3;'>[ 커머스 ]</div></li>
+						<li>
+							<div class="fam_btn"><a href="http://www.nurisoop.co.kr" target="_blank">누리숲</a></div>
+						</li>
+						<li>
+							<div class="fam_btn"><a href="http://www.entv.co.kr" target="_blank">이엔티비</a></div>
+						</li>
+						<li>
+							<div class="fam_btn"><b style='color:#ff0000;'>쎈플라워</b></div></li>
+						<li style='margin-top:10px;'><div class="fam_btn" style='font-weight:bold; color: #a3a3a3;'>[ 서비스 ]</div></li>
+						<li>
+							<div class="fam_btn"><a href="http://www.daemon-tools.kr" target="_blank">데몬툴즈</a></div>
+						</li>
+						<li>
+							<div class="fam_btn"><a href="http://www.ancamera.co.kr/home/download_01.html" target="_blank">안카메라</a></div>
+						</li>
+						<li>
+							<div class="fam_btn"><a href="http://www.ancamera.co.kr/home/download_02.html" target="_blank">안캠코더</a></div>
+						</li>
+						<li>
+							<div class="fam_btn"><a href="http://www.startools.co.kr" target="_blank">별툴즈</a></div>
+						</li>
+						<li>
+							<div class="fam_btn"><a href="http://www.badakencoder.com" target="_blank">바닥툴즈</a></div>
+						</li>
+						<li>
+							<div class="fam_btn"><a href="http://www.nolzzang.com" target="_blank">놀짱</a></div>
+						</li>
+						<li>
+							<div class="fam_btn"><a href="http://www.pcclear.co.kr" target="_blank">피씨클리어</a></div>
+						</li>
+						<li>
+							<div class="fam_btn"><a href="http://www.ebiznetworks.co.kr" target="_blank">이비즈네트웍스</a></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footerinfo-wrap">
+			<div class="wrap">
+				<div class="logo"><img src="http://img.ssenflower.co.kr/footer_logo.gif"></div>
+				<div class="txt" >
+					<p>
+						<strong>(주)이비즈네트웍스</strong><br />
+						<span>
+							대표이사 : 박기범<br />
+							주소 : 135-917 서울특별시 강남구 선릉로 99길 12 모노타워<br />
+							사업자등록번호 : 220-87-30865 <a href="#" target="_blank"><img src="http://img.ssenflower.co.kr/btn_copyinfo_gray.gif"></a><br />
+							부가통신사업신고번호 : 강남-11501호
+						</span>
+
+					</p>
+					<p class="copy">Copyright&copy;Ssenflower. All Rights Reserved.</p>
+				</div>
+				<ul class="customer">
+					<li class="f_mail">
+						<p>E-mail 문의</p>
+						<a href="mailto:help@go.co.kr">
+							<strong>
+								ebizflower@<br />
+								ebiznetworks.co.kr
+							</strong>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
