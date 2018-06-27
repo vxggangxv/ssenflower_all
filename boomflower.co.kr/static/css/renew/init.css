@@ -84,7 +84,7 @@ a, a:link, a:visited, a:hover, a:active {text-decoration:none; color: inherit;}
 #gnb-wrap .wrpa .main_gnb ul:after {content: ""; display: table; clear: both;}
 #gnb-wrap .wrpa .main_gnb ul li{float:left; font-size:16px; width:91px; text-align:center; letter-spacing:-0.3px;}
 #gnb-wrap .wrpa .main_gnb ul li a{color:#fff; line-height:3; width:91px; text-align:center;}
-#gnb-wrap .wrpa .main_gnb ul li a:hover{color:#fff36d; line-height:2.5; width:91px; text-align:center}
+#gnb-wrap .wrpa .main_gnb ul li a:hover{color:#fff36d; width:91px; text-align:center}
 #gnb-wrap .wrpa .sub_gnb{width:1100px; height:104px; margin:auto}
 #gnb-wrap .wrpa .sub_gnb ul{float:left}
 #gnb-wrap .wrpa .sub_gnb ul li{float:left}
@@ -307,6 +307,7 @@ a, a:link, a:visited, a:hover, a:active {text-decoration:none; color: inherit;}
 
 /* 서브 */
 #sub-wrap{width:1100px; margin:auto; position:relative; margin-top:50px}
+#sub-wrap:after {content: ""; display: table; clear: both;}
 #conw{width:1100px;  position:relative; margin:auto}
 .sub_fw{float:left; width:880px}
 .sub_fw h4{float:left; font-size:30px; font-weight:600; margin-bottom:30px;  }
@@ -361,38 +362,71 @@ a, a:link, a:visited, a:hover, a:active {text-decoration:none; color: inherit;}
 .sublist_wrap ul li .point2{font-weight:600; font-size:12px; color:#ababab}
 
 /* 상품상세 */
-.location{float:right; font-size:11px; color:#777777;  border-bottom:1px solid #e4e4e4;  padding-bottom:10px; width:1100px; text-align:right }
-.detail-wrap{float:right; width:1100px; margin-top:30px}
-.detail-wrap .img-info{float:right; width:470px}
+/*.location{float:right; font-size:11px; color:#777777;  border-bottom:1px solid #e4e4e4;  padding-bottom:10px; width:1100px; text-align:right }*/
+
+.detail-wrap{float:left; width:1100px;}
+.detail-wrap .img-info{float:left; width:470px}
 .detail-wrap .img-info .imgw{width:469px; height:469px; border:1px solid #e4e4e4;}
 .detail-wrap .img-info .imgw img{width:469px; height:469px; }
-.detail-wrap .img-info .thumb{width:470px; height:80px; background-color:#f3f3f3; margin-top:10px}
-.detail-wrap .img-info .thumb ul{float:left; margin:8px 0 0 8px}
+.detail-wrap .img-info .thumb{width:470px; height:80px; margin-top:10px}
+.detail-wrap .img-info .thumb ul{float:left; margin-top: 0px;}
 .detail-wrap .img-info .thumb ul li{float:left; width:62px; height:62px; border:1px solid #e4e4e4; margin-right:5px}
 .detail-wrap .img-info .thumb ul li img{width:62px; height:62px;}
-.detail-wrap .img-info .txt{font-size:12px; color:#494949; margin-top:15px}
-.detail-wrap .img-info .txt .co{font-size:12px; color:#f52711;}
+.detail-wrap .img-info .txt{font-size:13px; color:#494949; margin-top:0px; background: #f8f8f8; border: 1px solid #d9d9d9; padding: 15px 10px; box-sizing: border-box;}
+.detail-wrap .img-info .txt .co{font-size:12px; color:#d73276;}
 
-.detail-wrap .pr-info{width:590px; float:left}
-.detail-wrap .pr-info h4{font-size:28px; font-weight:600; color: #763899; font-family: "NanumSquare", "Nanum Square", "Nanum Gothic", sans-serif; font-weight: 700;}
+.detail-wrap .pr-info{width:590px; float:right}
+.detail-wrap .pr-info h4{font-size:28px; font-weight:600; font-family: "NanumSquare", "Nanum Square", "Nanum Gothic", sans-serif; font-weight: 700;}
+.detail-wrap .pr-info h4 .par {font-size: 18px; display: inline-block; vertical-align: middle; margin-left: 10px;}
+.detail-wrap .pr-info h4 .star {color: #fc0; font-size: 22px;}
 .detail-wrap .pr-info .info-table {width:590px; letter-spacing:0; border-top:1px solid #d7d6d6; margin-top:10px}
 .detail-wrap .pr-info .info-table tr.on{background:#fafafa; font-size:13px}
-.detail-wrap .pr-info .info-table th {padding:10px 0; text-align:center; background:#fafafa; border-bottom:1px solid #eeeeee; border-right:1px solid #eeeeee; font-weight:bold; font-size:13px}
-.detail-wrap .pr-info .info-table td { padding:10px 0; text-align:center; border-bottom:1px solid #eeeeee; line-height:1.5; border-top:1px solid #d7d6d6; font-size:13px}
+.detail-wrap .pr-info .info-table th {padding:10px 0; text-align:center; background:#fafafa; border-bottom:1px solid #eeeeee; border-right:1px solid #eeeeee; font-weight:bold; font-size:14px}
+.detail-wrap .pr-info .info-table td {padding:10px 0; text-align:center; border-bottom:1px solid #eeeeee; line-height:1.5; border-top:1px solid #d7d6d6; font-size:14px;}
+.detail-wrap .pr-info .info-table td:nth-child(2), 
+.detail-wrap .pr-info .info-table td:nth-child(3) {border-right: 1px solid #eee;}
+
+.detail-wrap .pr-info .info-table .op-tit {text-align: left; font-size: 14px; color: #888; padding-left: 20px;}
+.detail-wrap .pr-info .info-table .op-tit .s-1 {font-size: 16px; font-weight: 700; color: #333;}
+.detail-wrap .pr-info .info-table .option-list {font-size: 0;	text-align: left; margin-top: 20px; margin-bottom: 10px;}
+.detail-wrap .pr-info .info-table .option-list li {position: relative; display: inline-block; width: 25%; text-align: center; vertical-align: bottom; font-size: 14px;}
+.detail-wrap .pr-info .info-table .option-list li {}
+
 .detail-wrap .pr-info .info-table td .txt{font-size:11px; color:#f43723}
-.detail-wrap .pr-info .info-table td.re{font-size:13px; color:#f92e2e}
-.detail-wrap .pr-info .info-table td.bl{ color:#3676cc}
-.detail-wrap .pr-info .info-table td.gr{ color:#7e7e7e}
-.detail-wrap .pr-info .info-table td .opimg{float:left; margin-left:20px}
-.detail-wrap .pr-info .info-table td .op{float:left; margin-left:10px}
-.detail-wrap .pr-info .info-table td .op .tx{text-align:left; margin-bottom:5px}
+
+.detail-wrap .pr-info .info-table td.re{font-size:15px; font-weight: 700;}
+/*.detail-wrap .pr-info .info-table td.bl{ color:#3676cc}*/
+.detail-wrap .pr-info .info-table td.bl{ color:#7e7e7e; font-size: 13px;}
+.detail-wrap .pr-info .info-table td.gr{ color:#7e7e7e; text-decoration-line: line-through}
+
+.detail-wrap .pr-info .info-table td .opimg{}
+.detail-wrap .pr-info .info-table td .op{margin-top: 5px;}
+.detail-wrap .pr-info .info-table td .op .tx{text-align:center; margin-bottom:5px}
+
 .detail-wrap .pr-info .info-table td .no-w{float:left; margin-left:20px}
 .detail-wrap .pr-info .info-table td .no-b{float:left; margin-left:5px}
 .detail-wrap .pr-info .info-table td .no-b * {margin: 0; font-size: 0;}
-.detail-wrap .pr-info .buy-bt{float:left; margin-top:25px}
-.detail-wrap .pr-info .naverpay_button{float:left; margin-top:20px }
+.detail-wrap .pr-info .buy-bt {margin-top: 10px;}
+.detail-wrap .pr-info .buy-bt > * {display: inline-block; box-sizing: border-box; vertical-align: middle; height: 52px; text-align: center; font-size: 18px; font-weight: 700; line-height: 52px;}
+.detail-wrap .pr-info .buy-bt .pur-now {background: #d73276; color: #fff; width: 200px; }
+.detail-wrap .pr-info .buy-bt .pur-app {background: #838383; color: #fff; width: 218px; line-height: 1.3; padding-top: 7px;}
+.detail-wrap .pr-info .buy-bt .pur-app .sm {font-size: 13px; display: block; font-weight: 400; letter-spacing: -1px;}
+.detail-wrap .pr-info .buy-bt .cart {color: #d73276; border: 1px solid #d73276; width: 152px;}
+/*.detail-wrap .pr-info .buy-bt{float:left; margin-top:25px}*/
+.detail-wrap .pr-info .naverpay_button{margin-top:20px }
 
-.detail-wrap .detail-cont1{float:Left; margin-top:20px}
+.detail-wrap .detail-cont1 .tab-box {}
+.detail-wrap .detail-cont1 .tab-box .tab-list {border-bottom: 2px solid #343434;}
+.detail-wrap .detail-cont1 .tab-box .tab-list > li {position: relative; float: left; border: 1px solid #e6e6e6; line-height: 50px; width: 185px; margin-left: -1px; border-bottom: 0;}
+.detail-wrap .detail-cont1 .tab-box .tab-list > li:first-child {margin-left: 0;}
+.detail-wrap .detail-cont1 .tab-box .tab-list > li > a {display: block; font-size: 15px; font-weight: 700; color: #666; text-align: center;}
+.detail-wrap .detail-cont1 .tab-box .tab-list > li.on {border-color: #343434; z-index: 1; background: #343434;}
+.detail-wrap .detail-cont1 .tab-box .tab-list > li.on a {color: #fff;}
+.detail-wrap .detail-cont1 .tab-box .tab-list .tab-1 {}
+.detail-wrap .detail-cont1 .tab-box .tab-list .tab-2 {}
+.detail-wrap .detail-cont1 .tab-box .tab-list .tab-3 {}
+
+.detail-wrap .detail-cont1{margin-top:20px}
 .detail-wrap .detail-cont1 .info-detail-img{text-align:center; margin-top:50px}
 .detail-wrap .detail-cont2{float:Left; margin-top:80px}
 .detail-wrap .detail-cont2 .review{margin-top:50px}
