@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta http-equiv="cleartype" content="on">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<meta name="viewport" id="viewport" content="width=720, user-scalable=no , target-densitydpi=device-dpi">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta charset="UTF-8">
+	<title>제일싸플라워</title>
+	
+	
+	<link rel="stylesheet" href="http://static.je1ssa.co.kr/css/reset_m.css">
+	<link rel="stylesheet" href="http://static.go.co.kr/css/jquery-ui.css">
+	
+	<!--180625 수정-->
+	<link rel="stylesheet" href="http://static.je1ssa.co.kr/css/renew/init_m.css">
+	<!-- // -->
+	
+<!--	<link rel="stylesheet" href="../static/css/renew/init_m.css">-->
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
+<!--
+	<script type="text/javascript" src="http://static.je1ssa.co.kr/js/com_m.js?v=1529992368"></script>
+	<script type="text/javascript" src="http://static.je1ssa.co.kr/js/iscroll.js"></script>
+	<script type="text/javascript" src="http://static.je1ssa.co.kr/js/jquery.number.js"></script>
+	<script type="text/javascript" src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+	<script charset="UTF-8" type="text/javascript" src="http://t1.daumcdn.net/postcode/api/core/180619/1529384927473/180619.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script type="text/javascript" src="http://static.go.co.kr/js/datepicker_ko.js"></script>
+	<script type="text/javascript" src="http://static.je1ssa.co.kr/js/jquery.cookie.js"></script>
+	<script src="http://static.je1ssa.co.kr/js/bookmark.js?ver=1529992368"></script>
+	<script type="text/javascript" src="http://wcs.naver.net/wcslog.js"></script>
+-->
+	
+</head>
+<body>
+	
+	<h1 class="hidden"></h1>
+	
+	<header id="header">
+		<p class="logo">
+			<a href="http://m.je1ssa.co.kr"><img src="http://img.je1ssa.co.kr/renew/logo.png"></a>		
+		</p>
+		<a href="javascript:allmenu();" class="menu">
+			<span class="bar-1"></span>
+			<span class="bar-2"></span>
+			<span class="bar-3"></span>
+		</a> 
+		<a href="javascript:show_search();" class="srch">
+			<span class="mag-1"></span>
+		</a>
+		<input type="hidden" name="search_val" id="search_val" value="0">
+	</header>
+	
+	<div id="top_mar2" style="height: 170px; z-index:0;"></div>
+	
+	<div id="fix" style="z-index: 100; position: absolute; top: 94px;">
+		<div id="gnb_wrap">
+			<nav class="gnb" style="height:75px;">
+				<ul>
+					<li style="border-left:none"><a href="/home/member/logout.php"><span>로그아웃</span></a></li>
+					<li><a href="/home/goods/cart.php"><span>장바구니</span></a></li>
+					<li><a href="/home/mypage/order_list.php"><span>주문/배송조회</span></a></li>
+					<li><a href="/home/board/list.php"><span>고객센터</span></a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="headTitle">
+			<span class="back" style="z-index:8"><a onclick="history.back(-1);"><img src="http://img.ssenflower.co.kr/m_img/btn_back.jpg" alt="뒤로" height="48" width="48"></a></span>
+			<span>첫사랑</span>
+		</div>
+	</div>
+
+	<div id="detail_wrap">
+		<div class="info">
+			<h4 style="color: #fff;">첫사랑</h4>
+			<div class="detail_img"><img src="http://file.ssenflower.co.kr/prod_image/m_img/b1_img_m/20091228165609.jpg" id="image"></div>
+			
+
+			<!--이하 동일 , 임시 높이-->
+			<div style="height:500px;"></div>
+			<!-- // -->
+			
+			<!--cscenter 제거-->
+			<!--<div id="cscenter"></div>-->
+		</div>
+	</div>
+	
+	<div id="footer_renew">
+		<div class="f_top">
+			<ul class="f_menu cf">
+				<li><a href="http://www.je1ssa.co.kr/home/?pc=Y">PC버전</a></li>
+				<li><a href="/home/policy/agree.php">이용약관</a></li>
+				<li><a href="/home/policy/privacy.php">개인정보처리방침</a></li>
+				<li><a href="/home/board/list.php">고객센터</a></li>
+				<!--<li><a href="#">회사소개</a></li>
+				<li><a href="#">이용약관</a></li>
+				<li><a href="#" class="white">개인정보처리방침</a></li>
+				<li><a href="#">PC버전</a></li>-->
+			</ul>
+		</div>
+		<div class="f_btm">
+			<div class="f_logo"><img src="http://img.je1ssa.co.kr/renew/logo_footer_g.png" alt="푸터로고"></div>
+			<address>
+				<strong>(주)이엔자산개발</strong><br>
+				<span>
+					대표이사 : 박기범<br>
+					주소 : 충청남도 아산시 온천대로 1555, 1313호 (온천동,모노팰리스)<br>
+					사업자등록번호 : 312-86-20373<br>
+					팩스번호 : 02-6255-3096<br>
+					통신판매업 신고번호 : 제 20011-충남아산-00010호<br>
+				</span>
+			</address>
+			
+						<address>
+				<strong>(주)이비즈네트웍스</strong><br>
+				<span>
+					대표이사 : 박기범<br>
+					주소 : 서울특별시 강남구 테헤란로 82길 15, 14층 (대치동,디아이타워)<br>
+					사업자등록번호 : 220-87-30865<br>
+					통신판매업 신고번호 : 강남-11501호<br>
+				</span>
+			</address>
+						<p class="copy">Copyright©je1ssa. All Rights Reserved.</p>
+		</div>
+	</div>
+	
+</body>
+</html>

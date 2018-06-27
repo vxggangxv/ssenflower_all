@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta http-equiv="cleartype" content="on">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<meta name="viewport" id="viewport" content="width=720, user-scalable=no , target-densitydpi=device-dpi">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta charset="UTF-8">
+	<title>제일싸플라워</title>
+	
+	
+	<link rel="stylesheet" href="http://static.je1ssa.co.kr/css/reset_m.css">
+	<link rel="stylesheet" href="http://static.go.co.kr/css/jquery-ui.css">
+	
+	
+	<!--180625 수정-->
+	<link rel="stylesheet" href="http://static.je1ssa.co.kr/css/renew/init_m.css">
+	<!-- // -->
+	
+<!--	<link rel="stylesheet" href="../static/css/renew/init_m.css">-->
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
+<!--
+	<script type="text/javascript" src="http://static.je1ssa.co.kr/js/com_m.js?v=1529992368"></script>
+	<script type="text/javascript" src="http://static.je1ssa.co.kr/js/iscroll.js"></script>
+	<script type="text/javascript" src="http://static.je1ssa.co.kr/js/jquery.number.js"></script>
+	<script type="text/javascript" src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+	<script charset="UTF-8" type="text/javascript" src="http://t1.daumcdn.net/postcode/api/core/180619/1529384927473/180619.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script type="text/javascript" src="http://static.go.co.kr/js/datepicker_ko.js"></script>
+	<script type="text/javascript" src="http://static.je1ssa.co.kr/js/jquery.cookie.js"></script>
+	<script src="http://static.je1ssa.co.kr/js/bookmark.js?ver=1529992368"></script>
+	<script type="text/javascript" src="http://wcs.naver.net/wcslog.js"></script>
+-->
+	
+</head>
+<body>
+	
+	<h1 class="hidden"></h1>
+	
+	<header id="header">
+		<p class="logo">
+			<a href="http://m.je1ssa.co.kr"><img src="http://img.je1ssa.co.kr/renew/logo.png"></a>		
+		</p>
+		<a href="javascript:allmenu();" class="menu">
+			<span class="bar-1"></span>
+			<span class="bar-2"></span>
+			<span class="bar-3"></span>
+		</a> 
+		<a href="javascript:show_search();" class="srch">
+			<span class="mag-1"></span>
+		</a>
+		<input type="hidden" name="search_val" id="search_val" value="0">
+	</header>
+	<div id="gnb_wrap">
+		<nav class="gnb" style="height:75px;">
+			<ul>
+				<li style="border-left:none"><a href="/home/member/logout.php"><span>로그아웃</span></a></li>
+				<li><a href="/home/goods/cart.php"><span>장바구니</span></a></li>
+				<li><a href="/home/mypage/order_list.php"><span>주문/배송조회</span></a></li>
+				<li><a href="/home/board/list.php"><span>고객센터</span></a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div id="main_bn">
+		<div class="slidee">
+			<ul>
+				<li><a href="#"><img src="http://img.je1ssa.co.kr/renew/m/mv.jpg" alt="가격만저렴하지않아요!"></a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div id="main_subbn" class="cf">
+		<ul>
+			<li><a href="/home/goods/list.php?depth=A"><img src="http://img.ssenflower.co.kr/m_img/main_subbn_01.gif"></a></li>
+			<li><a href="/home/goods/list.php?depth=B"><img src="http://img.ssenflower.co.kr/m_img/main_subbn_02.gif"></a></li>
+			<li><a href="/home/goods/list.php?depth=C"><img src="http://img.ssenflower.co.kr/m_img/main_subbn_03.gif"></a></li>
+		</ul>
+		<ul>
+			<li><a href="/home/goods/list.php?depth=D"><img src="http://img.ssenflower.co.kr/m_img/main_subbn_04.gif"></a></li>
+			<li><a href="/home/goods/list.php?depth=E"><img src="http://img.ssenflower.co.kr/m_img/main_subbn_05.gif"></a></li>
+			<li><a href="/home/goods/list.php?depth=F"><img src="http://img.ssenflower.co.kr/m_img/main_subbn_06.gif"></a></li>
+		</ul>
+	</div>
+	
+	
+	<div id="best_product">
+		<h2 class="h2-tit ftfm-nq"><span class="thColor2">제일싸 플라워</span> 베스트 상품</h2>
+		<ul>
+			<li class="info">
+				<div class="thumb"><a href="/home/goods/detail.php?z=193"><img src="http://file.ssenflower.co.kr/prod_image/m_img/b_img_m/20091228181757.jpg" width="335" height="335"></a></div>
+				<div class="goods">
+					<a href="/home/goods/detail.php?z=193">
+						<p>여왕의 자존심</p>
+						<p><span class="price"><del>82,800원</del></span> <span class="discount">69,000원</span></p>
+						<p class="point"><img src="http://img.ssenflower.co.kr/m_img/point_icon.jpg">690원</p>
+						<div class="app_price">
+							<p>모바일앱특가</p><span>67,000원</span></div>
+					</a>
+				</div>
+			</li>
+			<li class="info">
+				<div class="thumb"><a href="/home/goods/detail.php?z=413"><img src="http://file.ssenflower.co.kr/prod_image/m_img/b_img_m/20160107171942.jpg" width="335" height="335"></a></div>
+				<div class="goods">
+					<a href="/home/goods/detail.php?z=413">
+						<p>축하화환 4단 - A</p>
+						<p><span class="price"><del>180,000원</del></span> <span class="discount">150,000원</span></p>
+						<p class="point"><img src="http://img.ssenflower.co.kr/m_img/point_icon.jpg">1,500원</p>
+						<div class="app_price">
+							<p>모바일앱특가</p><span>148,000원</span></div>
+					</a>
+				</div>
+			</li>
+		</ul>
+		<ul>
+			<li class="info">
+				<div class="thumb"><a href="/home/goods/detail.php?z=278"><img src="http://file.ssenflower.co.kr/prod_image/m_img/b_img_m/20150923174436.jpg" width="335" height="335"></a></div>
+				<div class="goods">
+					<a href="/home/goods/detail.php?z=278">
+						<p>금침</p>
+						<p><span class="price"><del>82,800원</del></span> <span class="discount">69,000원</span></p>
+						<p class="point"><img src="http://img.ssenflower.co.kr/m_img/point_icon.jpg">690원</p>
+						<div class="app_price">
+							<p>모바일앱특가</p><span>67,000원</span></div>
+					</a>
+				</div>
+			</li>
+			<li class="info">
+				<div class="thumb"><a href="/home/goods/detail.php?z=325"><img src="http://file.ssenflower.co.kr/prod_image/m_img/b_img_m/20150923182011.jpg" width="335" height="335"></a></div>
+				<div class="goods">
+					<a href="/home/goods/detail.php?z=325">
+						<p>철골소심</p>
+						<p><span class="price"><del>57,600원</del></span> <span class="discount">48,000원</span></p>
+						<p class="point"><img src="http://img.ssenflower.co.kr/m_img/point_icon.jpg">480원</p>
+						<div class="app_price">
+							<p>모바일앱특가</p><span>46,000원</span></div>
+					</a>
+				</div>
+			</li>
+		</ul>
+		<ul>
+			<li class="info">
+				<div class="thumb"><a href="/home/goods/detail.php?z=237"><img src="http://file.ssenflower.co.kr/prod_image/m_img/b_img_m/20151224154014.jpg" width="335" height="335"></a></div>
+				<div class="goods">
+					<a href="/home/goods/detail.php?z=237">
+						<p>100송이 핑크혼합바구니</p>
+						<p><span class="price"><del>274,800원</del></span> <span class="discount">229,000원</span></p>
+						<p class="point"><img src="http://img.ssenflower.co.kr/m_img/point_icon.jpg">2,290원</p>
+						<div class="app_price">
+							<p>모바일앱특가</p><span>227,000원</span></div>
+					</a>
+				</div>
+			</li>
+			<li class="info">
+				<div class="thumb"><a href="/home/goods/detail.php?z=149"><img src="http://file.ssenflower.co.kr/prod_image/m_img/b_img_m/20091228172942.jpg" width="335" height="335"></a></div>
+				<div class="goods">
+					<a href="/home/goods/detail.php?z=149">
+						<p>디어 레드</p>
+						<p><span class="price"><del>106,800원</del></span> <span class="discount">89,000원</span></p>
+						<p class="point"><img src="http://img.ssenflower.co.kr/m_img/point_icon.jpg">890원</p>
+						<div class="app_price">
+							<p>모바일앱특가</p><span>87,000원</span></div>
+					</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+	<div id="footer_renew">
+		<div class="f_top">
+			<ul class="f_menu cf">
+				<li><a href="http://www.je1ssa.co.kr/home/?pc=Y">PC버전</a></li>
+				<li><a href="/home/policy/agree.php">이용약관</a></li>
+				<li><a href="/home/policy/privacy.php">개인정보처리방침</a></li>
+				<li><a href="/home/board/list.php">고객센터</a></li>
+				<!--<li><a href="#">회사소개</a></li>
+				<li><a href="#">이용약관</a></li>
+				<li><a href="#" class="white">개인정보처리방침</a></li>
+				<li><a href="#">PC버전</a></li>-->
+			</ul>
+		</div>
+		<div class="f_btm">
+			<div class="f_logo"><img src="http://img.je1ssa.co.kr/renew/logo_footer_g.png" alt="푸터로고"></div>
+			<address>
+				<strong>(주)이엔자산개발</strong><br>
+				<span>
+					대표이사 : 박기범<br>
+					주소 : 충청남도 아산시 온천대로 1555, 1313호 (온천동,모노팰리스)<br>
+					사업자등록번호 : 312-86-20373<br>
+					팩스번호 : 02-6255-3096<br>
+					통신판매업 신고번호 : 제 20011-충남아산-00010호<br>
+				</span>
+			</address>
+			
+						<address>
+				<strong>(주)이비즈네트웍스</strong><br>
+				<span>
+					대표이사 : 박기범<br>
+					주소 : 서울특별시 강남구 테헤란로 82길 15, 14층 (대치동,디아이타워)<br>
+					사업자등록번호 : 220-87-30865<br>
+					통신판매업 신고번호 : 강남-11501호<br>
+				</span>
+			</address>
+						<p class="copy">Copyright©je1ssa. All Rights Reserved.</p>
+		</div>
+	</div>
+	
+</body>
+</html>
