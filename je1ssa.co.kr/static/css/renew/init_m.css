@@ -190,7 +190,7 @@ a { cursor: pointer; }
 #detail_wrap .info .bntwrap{margin:20px 0}
 
 #detail_wrap .detail_tab {float:left;}
-#detail_wrap .detail_tab li {float:left;display:block;margin:30px 0;width:237px;height:75px;font-size:25px;color:#4a4a4a;text-align:center;letter-spacing:-0.5px;line-height:3;background:#f6f6f5;border-top:2px solid #ebebeb;border-right:2px solid #ebebeb;border-bottom:2px solid #ff5e4d}
+#detail_wrap .detail_tab li {float:left;display:block;margin:30px 0;width:237px;height:75px;font-size:25px;color:#4a4a4a;text-align:center;letter-spacing:-0.5px;line-height:3;background:#f6f6f5;border-top:2px solid #ebebeb;border-right:2px solid #ebebeb;border-bottom:2px solid #aa72ca}
 #detail_wrap .detail_tab li a {display:block;line-height:3;width:237px;height:75px;color:#4a4a4a;text-decoration:none}
 #detail_wrap .detail_tab .on {border-top:4px solid #aa72ca;font-weight:600;background:#fff;border-bottom:none;border-right:1px solid #aa72ca;border-left:1px solid #aa72ca}
 #detail_wrap .detail_tab .on a {color:#aa72ca; text-decoration:none}

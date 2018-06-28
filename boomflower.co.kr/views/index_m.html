@@ -22,10 +22,10 @@
 	
 	
 	<!--180625 수정-->
-<!--	<link rel="stylesheet" href="http://static.boomflower.co.kr/css/renew/init_m.css">-->
+	<link rel="stylesheet" href="http://static.boomflower.co.kr/css/renew/init_m.css">
 	<!-- // -->
 	
-	<link rel="stylesheet" href="../static/css/renew/init_m.css">
+<!--	<link rel="stylesheet" href="../static/css/renew/init_m.css">-->
 	
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
 <!--
@@ -64,28 +64,35 @@
 		<input type="hidden" name="search_val" id="search_val" value="0">
 	</header>
 	<div id="gnb_wrap">
-		<span class="btn btn-prev"><img src="http://img.boomflower.co.kr/renew/m_best_prevbt.png" alt="이전으로"></span>
-		<nav class="gnb" style="height:75px;">
-			<ul>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-				<li style="border-left:none"><a href="/home/member/logout.php"><span>로그아웃</span></a></li>
-				<li><a href="/home/goods/cart.php"><span>장바구니</span></a></li>
-				<li><a href="/home/mypage/order_list.php"><span>주문/배송조회</span></a></li>
-				<li><a href="/home/board/list.php"><span>고객센터</span></a></li>
+		<nav class="gnb">
+			<ul class="menu">
+				<li><a href="">꽃바구니</a></li>
+				<li><a href="">꽃다발</a></li>
+				<li><a href="">꽃박스</a></li>
+				<li><a href="">축하화환</a></li>
+				<li><a href="">근조화환</a></li>
+				<li><a href="">동양란</a></li>
+				<li><a href="">서양란</a></li>
+				<li><a href="">공기정화</a></li>
+				<li><a href="">관엽/화분</a></li>
+				<li><a href="">분재</a></li>
+				<li><a href="">장미100송이</a></li>
+				<li><a href="">과일바구니</a></li>
 			</ul>
 		</nav>
+		<span class="btn btn-prev"><img src="http://img.boomflower.co.kr/renew/m_best_prevbt.png" alt="이전으로"></span>
 		<span class="btn btn-next"><img src="http://img.boomflower.co.kr/renew/m_best_nextbt.png" alt="다음으로"></span>
+		<script>
+			$(function() {
+				var nav = $("#gnb_wrap nav .menu"),
+					nav_li = $("#gnb_wrap nav .menu li"),
+					fullWd = 0;
+				$.each(nav_li, function(index, item) {
+					fullWd = fullWd +  $(item).outerWidth();
+				});
+				nav.width(fullWd);
+			});
+		</script>
 	</div>
 
 	<div id="main_bn">

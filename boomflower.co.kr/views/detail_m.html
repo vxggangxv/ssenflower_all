@@ -14,29 +14,30 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="format-detection" content="telephone=no">
 	<meta charset="UTF-8">
-	<title>제일싸플라워</title>
+	<title>붐플라워</title>
 	
 	
-	<link rel="stylesheet" href="http://static.je1ssa.co.kr/css/reset_m.css">
+	<link rel="stylesheet" href="http://static.boomflower.co.kr/css/reset_m.css">
 	<link rel="stylesheet" href="http://static.go.co.kr/css/jquery-ui.css">
 	
+	
 	<!--180625 수정-->
-	<link rel="stylesheet" href="http://static.je1ssa.co.kr/css/renew/init_m.css">
+	<link rel="stylesheet" href="http://static.boomflower.co.kr/css/renew/init_m.css">
 	<!-- // -->
 	
 <!--	<link rel="stylesheet" href="../static/css/renew/init_m.css">-->
 	
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
 <!--
-	<script type="text/javascript" src="http://static.je1ssa.co.kr/js/com_m.js?v=1529992368"></script>
-	<script type="text/javascript" src="http://static.je1ssa.co.kr/js/iscroll.js"></script>
-	<script type="text/javascript" src="http://static.je1ssa.co.kr/js/jquery.number.js"></script>
+	<script type="text/javascript" src="http://static.boomflower.co.kr/js/com_m.js?v=1529992368"></script>
+	<script type="text/javascript" src="http://static.boomflower.co.kr/js/iscroll.js"></script>
+	<script type="text/javascript" src="http://static.boomflower.co.kr/js/jquery.number.js"></script>
 	<script type="text/javascript" src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
 	<script charset="UTF-8" type="text/javascript" src="http://t1.daumcdn.net/postcode/api/core/180619/1529384927473/180619.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 	<script type="text/javascript" src="http://static.go.co.kr/js/datepicker_ko.js"></script>
-	<script type="text/javascript" src="http://static.je1ssa.co.kr/js/jquery.cookie.js"></script>
-	<script src="http://static.je1ssa.co.kr/js/bookmark.js?ver=1529992368"></script>
+	<script type="text/javascript" src="http://static.boomflower.co.kr/js/jquery.cookie.js"></script>
+	<script src="http://static.boomflower.co.kr/js/bookmark.js?ver=1529992368"></script>
 	<script type="text/javascript" src="http://wcs.naver.net/wcslog.js"></script>
 -->
 	
@@ -47,57 +48,239 @@
 	
 	<header id="header">
 		<p class="logo">
-			<a href="http://m.je1ssa.co.kr"><img src="http://img.je1ssa.co.kr/renew/logo.png"></a>		
+			<a href="http://m.boomflower.co.kr"><img src="http://img.boomflower.co.kr/renew/logo.png"></a>		
 		</p>
 		<a href="javascript:allmenu();" class="menu">
 			<span class="bar-1"></span>
 			<span class="bar-2"></span>
 			<span class="bar-3"></span>
 		</a> 
-		<a href="javascript:show_search();" class="srch">
-			<span class="mag-1"></span>
-		</a>
+		<div class="top_menu">
+			<a href="/home/goods/cart.php" class="cart"><img src="http://img.boomflower.co.kr/renew/m/icon_cart.png"></a>
+			<a href="javascript:show_search();" class="srch">
+				<span class="mag-1"></span>
+			</a>
+		</div>
 		<input type="hidden" name="search_val" id="search_val" value="0">
 	</header>
 	
-	<div id="top_mar2" style="height: 170px; z-index:0;"></div>
-	
-	<div id="fix" style="z-index: 100; position: absolute; top: 94px;">
+	<div id="fix">
 		<div id="gnb_wrap">
-			<nav class="gnb" style="height:75px;">
-				<ul>
-					<li style="border-left:none"><a href="/home/member/logout.php"><span>로그아웃</span></a></li>
-					<li><a href="/home/goods/cart.php"><span>장바구니</span></a></li>
-					<li><a href="/home/mypage/order_list.php"><span>주문/배송조회</span></a></li>
-					<li><a href="/home/board/list.php"><span>고객센터</span></a></li>
+			<nav class="gnb">
+				<ul class="menu">
+					<li><a href="">꽃바구니</a></li>
+					<li><a href="">꽃다발</a></li>
+					<li><a href="">꽃박스</a></li>
+					<li><a href="">축하화환</a></li>
+					<li><a href="">근조화환</a></li>
+					<li><a href="">동양란</a></li>
+					<li><a href="">서양란</a></li>
+					<li><a href="">공기정화</a></li>
+					<li><a href="">관엽/화분</a></li>
+					<li><a href="">분재</a></li>
+					<li><a href="">장미100송이</a></li>
+					<li><a href="">과일바구니</a></li>
 				</ul>
 			</nav>
+			<span class="btn btn-prev"><img src="http://img.boomflower.co.kr/renew/m_best_prevbt.png" alt="이전으로"></span>
+			<span class="btn btn-next"><img src="http://img.boomflower.co.kr/renew/m_best_nextbt.png" alt="다음으로"></span>
+			<script>
+				$(function() {
+					var nav = $("#gnb_wrap nav .menu"),
+						nav_li = $("#gnb_wrap nav .menu li"),
+						fullWd = 0;
+					$.each(nav_li, function(index, item) {
+						fullWd = fullWd +  $(item).outerWidth();
+					});
+					nav.width(fullWd);
+				});
+			</script>
 		</div>
+		
 		<div id="headTitle">
 			<span class="back" style="z-index:8"><a onclick="history.back(-1);"><img src="http://img.ssenflower.co.kr/m_img/btn_back.jpg" alt="뒤로" height="48" width="48"></a></span>
-			<span>첫사랑</span>
+			<span>첫사랑 <span class="par"><span class="star">★★★★</span> (4.0)</span></span>
 		</div>
 	</div>
 
+	
 	<div id="detail_wrap">
 		<div class="info">
-			<h4 style="color: #fff;">첫사랑</h4>
 			<div class="detail_img"><img src="http://file.ssenflower.co.kr/prod_image/m_img/b1_img_m/20091228165609.jpg" id="image"></div>
 			
+			<table class="info-table">
+				<colgroup>
+					<col width="25%">
+					<col width="25%">
+					<col width="25%">
+					<col width="25%">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>선택</th>
+						<td><input type="radio" name="price" id="pay1" value="1" class="radio" checked="" onclick="price_total();"> <label for="pay1">실속</label></td>
+						<td><input type="radio" name="price" id="pay2" value="2" class="radio" onclick="price_total();"> <label for="pay2">일반</label></td>
+						<td><input type="radio" name="price" id="pay3" value="3" class="radio" onclick="price_total();"> <label for="pay3">고급</label></td>
+					</tr>
+					<tr>
+						<th>정상가</th>
+						<td class="gr"><label for="pay1">63,600원</label></td>
+						<td class="gr"><label for="pay2">76,800원</label></td>
+						<td class="gr"><label for="pay3">90,000원</label></td>
+					</tr>
+					<tr>
+						<th>할인가</th>
+						<td class="re"><label for="pay1"><b>53,000원</b></label></td>
+						<td class="re"><label for="pay2"><b>64,000원</b></label></td>
+						<td class="re"><label for="pay3"><b>75,000원</b></label></td>
+					</tr>
+					<tr>
+						<th>적립금</th>
+						<td class="bl"><label for="pay1">530원</label></td>
+						<td class="bl"><label for="pay2">640원</label></td>
+						<td class="bl"><label for="pay3">750원</label></td>
+					</tr>
+					<tr class="tr-op">
+						<td colspan="4">
+							<p class="op-tit"><span class="s-1">옵션상품</span></p>
+							<ul class="cf option-list">
+								<li>
+									<div class="op">
+										<p class="tx">케익</p><select name="opt1" onchange="price_total();" style="width:220px; padding-left:20px; font-size:23px;"><option value="">= 선택하세요 =</option><option value="1">20,000원</option><option value="2">25,000원</option><option value="3">30,000원</option><option value="4">35,000원</option></select> 
+									</div>
+								</li>
+								<li>
+									<div class="op">
+										<p class="tx">빼빼로</p><select name="opt2" onchange="price_total();" style="width:220px; padding-left:20px; font-size:23px;"><option value="">= 선택하세요 =</option><option value="1">10,000원</option><option value="2">15,000원</option><option value="3">20,000원</option></select> 
+									</div>
+								</li>
+								<li>
+									<div class="op">
+										<p class="tx">사탕</p><select name="opt3" onchange="price_total();" style="width:220px; padding-left:20px; font-size:23px;"><option value="">= 선택하세요 =</option><option value="1">10,000원</option><option value="2">15,000원</option><option value="3">20,000원</option></select> 
+									</div>
+								</li>
+								<li>
+									<div class="op">
+										<p class="tx">샴페인(무알콜)</p><select name="opt4" onchange="price_total();" style="width:220px; padding-left:20px; font-size:23px;"><option value="">= 선택하세요 =</option><option value="1">10,000원</option><option value="2">15,000원</option><option value="3">20,000원</option></select> 
+									</div>
+								</li>
+								<li>
+									<div class="op">
+										<p class="tx">초콜릿</p><select name="opt5" onchange="price_total();" style="width:220px; padding-left:20px; font-size:23px;"><option value="">= 선택하세요 =</option><option value="1">10,000원</option><option value="2">15,000원</option><option value="3">20,000원</option></select> 
+									</div>
+								</li>
+								<li>
+									<div class="op">
+										<p class="tx">배송비 추가</p><select name="opt10" onchange="price_total();" style="width:220px; padding-left:20px; font-size:23px;"><option value="">= 선택하세요 =</option><option value="1">5,000원</option><option value="2">10,000원</option></select> 
+									</div>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span class="s-lbl">주문수량</span>
+						</td>
+						<td colspan="3">
+							<a onclick="goods.cnt('minus');price_total();" style="float:left;"><img alt="-" src="http://static.nurisoop.co.kr/images/m/btn_minus.png"></a>
+							<input name="cnt" class="ea" id="cnt" onkeydown="return util.number(event);" onblur="util.min(this.id);" style=" float:left;border-radius:0px;text-align:center;height:60px" maxlength="2" value="1" type="number">
+							<a onclick="goods.cnt('plus');price_total();" style="float:left;"><img alt="+" src="http://static.nurisoop.co.kr/images/m/btn_plus.png"></a>
+						</td>
+					</tr>
+					<tr>
+						<td class="vertical-align: top">금액합계</td>
+						<td colspan="3" style="text-align: right; padding-right: 30px;">
+							<div id="total_price" style="color:#ed0000; font-weight:bold; font-size:35px;">159,000원</div>
+							<div class="app_price">
+								<span class="appSale">APP특가</span><span class="app_price_red" id="app_price">157,000원</span>
+							</div>
+						</td>
+					</tr>
 
-			<!--이하 동일 , 임시 높이-->
-			<div style="height:500px;"></div>
-			<!-- // -->
+					<tr>
+						<td colspan="2" style="text-align: left; text-indent: 26px;">네이버간편구매</td>
+						<td colspan="2">
+							<div class="naverpay_button" style="float: right; padding-right: 25px;">
+
+								<script type="text/javascript" src="https://pay.naver.com/customer/js/mobile/naverPayButton.js" charset="UTF-8"></script>
+								<script type="text/javascript" src="https://pay.naver.com/customer/js/mobile/innerNaverPayButton.js?site_preference=normal&amp;425046" charset="UTF-8"></script>
+								<link id="NAVER_PAY_STYLE" type="text/css" rel="stylesheet" href="https://img.pay.naver.net/static/css/button/mbutton2.css?425046">
+								
+								<div id="NC_ID_1530163821339492" class="npay_storebtn_bx npay_type_MA_1">
+									<div class="npay_button_box ">
+										<div class="npay_button">
+											<div class="npay_text"><span class="npay_naver_logo"><span class="npay_blind">NAVER</span></span><a href="https://m.pay.naver.com/mobile/about" class="npay_link">네이버 ID로 간편구매<br>네이버페이</a></div>
+											<ul class="npay_btn_list">
+												<li class="npay_btn_item"> <a id="NPAY_BUY_LINK_IDNC_ID_1530163821339492" href="#" class="npay_btn_link npay_btn_pay btn_green"><span class="npay_logo npay_blind">네이버페이</span>구매</a> </li>
+												<li class="npay_btn_item btn_width"> <a id="NPAY_WISH_LINK_IDNC_ID_1530163821339492" href="http://www.boomflower.co.kr/home/goods/naverpay_zzim.php?num=141" class="npay_btn_link npay_btn_zzim ">찜</a> </li>
+												<li class="npay_btn_item btn_width"> <a id="NPAY_TALK_LINK_IDNC_ID_1530163821339492" href="https://talk.naver.com/wcb3zz?frm=mpay&amp;ref=http%3A%2F%2Fm.boomflower.co.kr%2Fhome%2Fgoods%2Fdetail.php%3Fz%3D141#nafullscreen" class="npay_btn_link npay_btn_talk "><span class="npay_blind">톡톡</span></a> </li>
+											</ul>
+										</div>
+										<div class="npay_event">
+											<p id="NPAY_PROMOTION_IDNC_ID_1530163821339492" class="npay_event_text"><strong class="event_title">[KB포인트리]</strong><a href="http://m.post.naver.com/viewer/postView.nhn?volumeNo=13442827&amp;memberNo=30633733" class="event_link">를 네이버페이로 전환할 수 있다고?</a></p> <a id="NPAY_PROMOTION_NEXT_IDNC_ID_1530163821339492" href="http://event2.pay.naver.com/v/m/event/benefit/list" class="npay_more"><span class="npay_blind">다음</span></a> </div>
+									</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+					
+				</tbody>
+			</table>
+
+			<div class="buy-bt">
+				<a href="javascript: app_setup_show('m_detail');" class="pur-app">APP으로 구매<span class="sm">전상품 2,000원 할인</span></a>&nbsp;
+				<a href="javascript: order();" class="pur-now">바로 구매하기</a>
+			</div>
+			<!--// info -->
 			
-			<!--cscenter 제거-->
-			<!--<div id="cscenter"></div>-->
+		</div>
+		
+		<div id="tab01" class="detail_tab">
+			<ul>
+				<li class="on"><a href="#tab01">상품 상세정보</a></li>
+				<li><a href="#tab02">상품후기(<span class="review_all_count">7</span>)</a></li>
+				<li class="last"><a href="#tab03">배송/교환/환불</a></li>
+			</ul>
+		</div>
+		
+		<div class="detail_img2">
+			<img src="http://file.boomflower.co.kr/prod_image/content_img/20091228165609.jpg">
+			<center>
+				<div id="goods_detail" style="margin-top:10px;margin-bottom:20px;width:90%;background:rgb(247, 247, 234);border:1px solid gray;border-radius:10px;padding:10px;font-size:23px;line-height: 1.8;">
+					사랑하는 연인에게 특별한 날, 생일축하, 사랑 고백 등 각종 축하용 선물로 좋습니다.<br><br><br>
+					<font color="#44aeff" size="3"><strong>[상품 구성]</strong></font><br><br>핑크장미(아쿠아), 고급포장지와 세련된 디자인 전문 플로리스트 상품제작<br><br>
+					<font color="#44aeff" size="3"><strong>[상품용도]</strong></font><br><br>결혼기념일, 출산, 연주회, 축하용품, 수상, 전시회, 생일, 기념일<br><br>
+					<font color="#44aeff" size="3"><strong>[주의 사항]</strong></font><br><br>샘플사진의 포장방법과 상품구성 소재는 지역과 계절따라 조금씩 달라질수 있으나, 이미지와 거의 유사하게 배달합니다.<br><br>
+					<font color="#44aeff" size="3"><strong>[관리방법]</strong></font><br><br>그늘지고 바람이 잘 통하는 곳에다 거꾸로 매달아 두면 된다.<br><br>매달아 놓지 않고 세워 두면 꽃 목이 휘어져 보기 싫게 된다. <br><br>마른 꽃다발을 실내에 장식해 두었는데, 벌레가 생길 때는 햇볕에다 한 나절 정도 두면 자외선에 의해 살균이 된다.<br><br>또 꽃다발에서 안개꽃 등의 작은 꽃이나 꽃가루가 떨어질 때는 헤어 스프레이를 뿌려 주면 어느 정도 방지할 수 있다.<br><br>꽃병에 꽂아 꽃을 즐길 때는 선물로 받은 후 가능한 빨리 꽃병에 꽂는 게 좋다.<br><br>꽃은 줄기에서 잘라진 후 오래 될수록 줄기 속에 공기가 차게 되고,<br> <br>공기가 많이 차게 되면 물에 꽂았을 때 물 올림이 잘 안되어 꽃이 빨리 시든다. <br><br>또 꽃병에 꽂기 전에는 공기가 들어간 줄기 끝을 일부분 잘라 낸 다음 꽂으면 물 올림이 잘 되어 꽃을 보다 오래 볼 수 있다. </div>
+			</center>
+			<img src="http://img.ssenflower.co.kr/site/boomflower/intro/intro_01.jpg" width="700">
 		</div>
 	</div>
+	
+	
+	<hr class="hr-bor">
+	
+	<div class="cf"></div>
+	<div class="cs-wrap cf">
+		<div class="cswrap">
+			<p class="p-1">고객센터 상담안내</p>
+			<p class="p-2 cf">
+				<span class="callNum">1688-5480</span>
+				<span class="callInfo">
+					평일 :  오전 09:00 ~ 오후 18:00<br>
+					토요일 : 오전 09:00 ~ 오후 17:00<br>
+					일요일/공휴일 휴무 
+				</span>
+			</p>
+			<p class="p-3"><a href="" class="a-callCenter">붐플라워 고객센터 연결 <span class="ic-rArrow rArrow"></span></a></p>
+		</div>
+	</div>
+		
 	
 	<div id="footer_renew">
 		<div class="f_top">
 			<ul class="f_menu cf">
-				<li><a href="http://www.je1ssa.co.kr/home/?pc=Y">PC버전</a></li>
+				<li><a href="http://www.boomflower.co.kr/home/?pc=Y">PC버전</a></li>
 				<li><a href="/home/policy/agree.php">이용약관</a></li>
 				<li><a href="/home/policy/privacy.php">개인정보처리방침</a></li>
 				<li><a href="/home/board/list.php">고객센터</a></li>
@@ -108,30 +291,27 @@
 			</ul>
 		</div>
 		<div class="f_btm">
-			<div class="f_logo"><img src="http://img.je1ssa.co.kr/renew/logo_footer_g.png" alt="푸터로고"></div>
+			<div class="f_logo"><img src="http://img.boomflower.co.kr/renew/logo_footer_g.png" alt="푸터로고"></div>
 			<address>
-				<strong>(주)이엔자산개발</strong><br>
+				<strong>(주)이비즈에셋</strong><br>
 				<span>
-					대표이사 : 박기범<br>
-					주소 : 충청남도 아산시 온천대로 1555, 1313호 (온천동,모노팰리스)<br>
-					사업자등록번호 : 312-86-20373<br>
-					팩스번호 : 02-6255-3096<br>
-					통신판매업 신고번호 : 제 20011-충남아산-00010호<br>
+					대표이사 : 김병종<br>
+					주소 : 서울특별시 강남구 테헤란로 82길 15, 15층 (대치동,디아이타워)<br>
+					사업자등록번호 : 865-87-00164 <a href="javascript:onopen();" target="_blank">[ 사업자정보확인 ]</a> &nbsp;&nbsp;팩스번호 : 02-6255-3096 부가통신사업신고번호 : 제2015-서울강남-02194호
 				</span>
 			</address>
 			
-						<address>
+			<address>
 				<strong>(주)이비즈네트웍스</strong><br>
 				<span>
 					대표이사 : 박기범<br>
 					주소 : 서울특별시 강남구 테헤란로 82길 15, 14층 (대치동,디아이타워)<br>
-					사업자등록번호 : 220-87-30865<br>
-					통신판매업 신고번호 : 강남-11501호<br>
-				</span>
+					사업자등록번호 : 220-87-30865 <a href="javascript:onopen('ebiz');" target="_blank">[ 사업자정보확인 ]</a> &nbsp;&nbsp;부가통신사업신고번호 : 강남-11501호				
 			</address>
-						<p class="copy">Copyright©je1ssa. All Rights Reserved.</p>
+			<p class="copy">Copyright©boomflower. All Rights Reserved.</p>
 		</div>
 	</div>
+	
 	
 </body>
 </html>

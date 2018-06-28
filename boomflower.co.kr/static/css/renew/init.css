@@ -401,6 +401,7 @@ a, a:link, a:visited, a:hover, a:active {text-decoration:none; color: inherit;}
 
 .detail-wrap .pr-info .info-table td .opimg{}
 .detail-wrap .pr-info .info-table td .op{margin-top: 5px;}
+.detail-wrap .pr-info .info-table td .op select {height: 26px;}
 .detail-wrap .pr-info .info-table td .op .tx{text-align:center; margin-bottom:5px}
 
 .detail-wrap .pr-info .info-table td .no-w{float:left; margin-left:20px}
